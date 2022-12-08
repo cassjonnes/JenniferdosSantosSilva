@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho{
+    width: 100%;
+    margin: auto;
+    background-image: url(../img/backgroudheadernew.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cabecalho__contato{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    background: url("../img/bg.jpg");
+    color: white;
+}
+
+.whats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones__whats{
+    width: 35px;
+    padding: 5px;
+}
+
+.cor__contato{
+    color: #00ff06;
+}
+
+.cabecalho__contato--titulo{
+    padding: 1% 15%;
+}
+
+.cabecalho__principal{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.cabecalho__principal h1{
+    font-weight: 600;
+    font-size: 43px;
+    margin: 150px 60px 60px 60px;
+}
+
+.cabecalho__principal--paragrafo{
+    font-size: 23px;
+    margin: 0 200px 50px 200px;
+}
+
+.local__botao{
+    text-align: center;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    display: inline-flex;
+    width: 250px;
+    height: 55px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+  span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+  }
+
+  span a:before,
+  span a:after{
+    position: absolute;
+    content: "Falar com Criminalista";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  span a:before{
+    color: #fff;
+    background: #42b72a;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  span a:after{
+    color: #007ad9;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+
+
+.botao__whats{
+    width: 220px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #42b72a;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: #000000;
+
+}
+
+.botao__whats span{
+    font-weight: bold;
+}
+
+main{
+    background-image: url(../img/fundo.jpg);
+}
+
+section{
+    width: 960px;
+    margin: auto;
+    
+}
+
+.titulo__item{
+    font-size: 43px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.ajuda{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.titulo__categoria{
+    font-size: 43px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.ajuda li{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 180px;
+    vertical-align: top;
+    margin: 1%;
+    padding: 0;
+ /*   box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 20px;*/
+}
+
+.img-ajuda{
+    width: 75px;
+}
+
+.produto-descriçao{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.categorias{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.categorias li{
+    display: inline-block;
+    text-align: center;
+    height: 400px;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    background-color: white;
+}
+
+.categoria__titulo{
+    margin: 36px 0;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.img__categoria{
+    width: 63px;
+}
+
+footer{
+
+    background: url("../img/bg.jpg");
+    padding: 15px;
+    display: flex;
+}
+
+.secao__footer{
+    text-align: center;
+    margin: auto;
+}
+
+footer p{
+    color: #ffffff;
+    padding: 5px;
+}
+
+@media screen and (max-width: 960px) {
+
+    section{
+        width: 400px;
+        
+    }
+
+    .cabecalho__contato--titulo{
+        padding: 5px 20px;
+    }
+
+    .cabecalho__principal{
+        padding-bottom: 20px;
+    }
+
+    .cabecalho__principal h1{
+        margin:  40px;
+    }
+
+    .cabecalho__principal--paragrafo{
+        margin: 20px;
+    }
+
+    .ajuda{
+        padding: 0;
+    }
+
+    .ajuda li{
+        width: 40%;
+        height: 120px;
+        margin: 20px 2.5%;
+    }
+    
+    .produto-descriçao{
+        margin-top: 15px;
+    }
+
+    .categorias{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .categorias li{
+        width: 80%;
+        padding: 20px;
+        height: auto;
+        margin: 2%;
+    }
+    
+    .categoria__titulo{
+        margin: 15px 0;
+    }
+
+    footer{
+        display: block;
+    }
+
+
+}
